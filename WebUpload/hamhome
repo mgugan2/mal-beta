@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('tables.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+</style>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!--
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+-->
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo w3-padding-jumbo">
+    <p>Hamifgash Glatt Kosher Grill</p>
+  </div>
+  <div class="w3-display-topleft w3-padding-jumbo w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-btn w3-hover-light-grey">menu</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-btn w3-hover-light-grey">contact</button></p>
+    <p><button onclick="document.getElementById('kosher').style.display='block'" class="w3-btn w3-hover-light-grey">kosher</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-jumbo">
+    <p class="w3-xlarge">sunday - thursday 10a-9p | friday 10a-5p</p>
+    <p class="w3-xlarge"><b>Tel: 215-925-3550</b></p>
+    <p class="w3-xlarge"><b>811 Sansom St, Philadelphia</b></p>
+  </div>
+</div>
+
+
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+  
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-closebtn w3-xxlarge w3-hover-text-grey">x</span>
+      <h1>Soups</h1>
+    </div>
+    <div class="w3-container">
+      <div class="w3-col l8 s12">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <h5>Lentil...........................<b>5.00</b></h5>
+          <h5>Chicken Soup.......<b>5.00</b></h5>
+          <h5>Soup of the Day <b>5.00</b></h5>
+        </div>
+      </div>
+      <div class="w3-col l4">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <img src="soup.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Starters</h1>
+    </div>
+    <div class="w3-container">
+      <div class="w3-col l8 s12">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <h5><b>COLD APPETIZERS</b></h5>
+          <h5>Hummus...............................<b>5.95</b></h5>
+          <h5>Baba Ghanoush...............<b>5.95</b></h5>
+          <h5>Eggplant Salad................<b>5.95</b></h5>
+          <h5>Imam Bayildi......................<b>7.50</b></h5>
+          <h5>Stuffed Grape Leaves <b>5.95</b></h5>
+          <h5>Tabule.....................................<b>5.95</b></h5>
+          <h5>Pan-Fried Eggplant......<b>5.95</b></h5>
+          <h5>Matbukha.............................<b>5.95</b></h5>
+          <h5>Foul Hummus...................<b>7.50</b></h5>
+          <h5>Potato Salad......................<b>5.95</b></h5>
+          <h5>Combination.<b>13.95(md) 17.50(lg)</b></h5>
+          <h5><b>HOT APPETIZERS</b></h5>
+          <h5>Cigarette Bourekas..<b>5.59</b></h5>
+          <h5>Bourekas..........................<b>4.50</b></h5>
+          <h5>Shakshuka......................<b>6.95</b></h5>
+          <h5>Falafel Platters...........<b>13.95</b></h5>
+          <h5>Falafel Balls (6)............<b>6.00</b></h5>
+        </div>
+      </div>
+      <div class="w3-col l4">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <img src="apptzer.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Salad Bar</h1>
+    </div>
+    <div class="w3-container">
+      <div class="w3-col l8 s12">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <h5>............................................<b>small medium large</b></h5>
+          <h5>Israeli Salad...............<b>6.95........7.95........9.95</b></h5>
+          <h5>Green Salad...............<b>5.50</b></h5>
+          <h5>White Bean Salad <b>5.00</b></h5>
+          <h5>Chick Pea Salad......<b>5.00</b></h5>
+        </div>
+      </div>
+      <div class="w3-col l4">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <img src="salad.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Sandwiches</h1>
+    </div>
+    <div class="w3-container">
+      <div class="w3-col l8 s12">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <h5><b>VEGETARIAN</b></h5>
+          <h5>Falafel Sandwich.........................<b>5.95</b></h5>
+          <h5>Tuna Sandwich.............................<b>7.95</b></h5>
+          <h5>Hummus Sandwich..................<b>5.95</b></h5>
+          <h5>Baba Ghanoush Sandwich <b>5.95</b></h5>
+          <h5>Eggplant Sandwich..................<b>5.95</b></h5>
+          <h5>Tabule Sandwich........................<b>7.95</b></h5>
+          <h5>NON VEGETARIAN (*upgrade with fries <b>+2.00</b>)</h5>
+          <h5>Shawarma........................................<b>8.50</b></h5>
+          <h5>Chicken Breast.............................<b>8.50</b></h5>
+          <h5>Chicken Thigh...............................<b>8.50</b></h5>
+          <h5>Beef or Lamb................................<b>9.00</b></h5>
+          <h5>Hamifgash.......................................<b>8.00</b></h5>
+          <h5>Hamburger (w/fries)..............<b>10.95</b></h5>
+        </div>
+      </div>
+      <div class="w3-col l4">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <img src="wrap.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Grill</h1>
+    </div>
+    <div class="w3-container">
+      <div class="w3-col l8 s12">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <h5>CHICKEN</h5>
+          <h5>Chicken Shawarma..........................<b>14.95</b></h5>
+          <h5>Chicken Shish Kebab......................<b>14.95</b></h5>
+          <h5>Chicken Chops (Thigh) Kebab <b>14.95</b></h5>
+          <h5>Schnitzel...................................................<b>14.95</b></h5>
+          <h5>Chicken Portobello..........................<b>16.95</b></h5>
+          <h5>BEEF</h5>
+          <h5>Beef Shish Kebab.............................<b>16.95</b></h5>
+          <h5>Lamb Shish Kebab...........................<b>17.95</b></h5>
+          <h5>Adana Shish Kebab.........................<b>14.95</b></h5>
+          <h5>Hamifgash Kofta Kebab (Lamb & Beef Patties) <b>14.95</b></h5>
+          <h5>Rib Steak.................................................<b>24.95</b></h5>
+          <h5>Lamb Chops.........................................<b>27.95</b></h5>
+          <h5>MIXED GRILL........................................<b>19.95</b></h5>
+          <h5>Hamifgash Mixed Grill</h5>
+          <h5>Beef Shish Kebab</h5>
+          <h5>Chicken Shish Kebab</h5>
+          <h5>Hamifgash Kofta Kebab</h5>
+          <h5>Chicken Shawarma</h5>
+          <h5>COMBINATION PLATTER <b>2 items 15.95 or 3 items 18.95</b></h5>
+          <h5>Hamifgash Mixed Grill</h5>
+          <h5>Beef Shish Kebab</h5>
+          <h5>Chicken Shish Kebab</h5>
+          <h5>Hamifgash Kofta Kebab</h5>
+          <h5>Chicken Shawarma</h5>
+          <h5>Chicken Chops</h5>
+          <h5>Lamb Shish</h5>
+          <h5>SEAFOOD</h5>
+          <h5>Salmon Grill..........................................<b>17.95</b></h5>
+          <h5>Sea Bass.................................................<b>23.95</b></h5>
+          <h5>Tilapia.......................................................<b>15.95</b></h5>
+          <h5>Fish of the Day...................................<b>16.95</b></h5>
+        </div>
+      </div>
+      <div class="w3-col l4">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <img src="kafta.jpg" style="width:100%">
+        </div>
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <img src="fish.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Kids Menu</h1>
+    </div>
+    <div class="w3-container">
+      <div class="w3-col l8 s12">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <h5> *all items include French Fries</h5>
+          <h5>Chicken Nuggets <b>6.95</b></h5>
+          <h5>Hot Dog.......................<b>5.95</b></h5>
+          <h5>Hamburger...............<b>6.95</b></h5>
+          <h5>French Fries <b>small 4.00 large 8.00</b></h5>
+        </div>
+      </div>
+      <div class="w3-col l4">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <img src="kids3.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Desserts</h1>
+    </div>
+    <div class="w3-container">
+      <div class="w3-col l8 s12">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <h5>Baklava......<b>5.95</b></h5>
+          <h5>Apple Pie <b>4.95</b></h5>
+          <h5>Kadaif..........<b>5.95</b></h5>
+        </div>
+      </div>
+      <div class="w3-col l4">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <img src="dessert.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Beverages</h1>
+    </div>
+    <div class="w3-container">
+      <div class="w3-col l8 s12">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <h5>Coffee.......................................<b>1.95</b></h5>
+          <h5>Nana Tea................................<b>1.95</b></h5>
+          <h5>Soft Drinks............................<b>1.50</b></h5>
+          <h5>Snapple..................................<b>2.50</b></h5>
+          <h5>Imported Israeli Juice..<b>2.50</b></h5>
+          <h5>Turkish Coffee....................<b>2.95</b></h5>
+        </div>
+      </div>
+      <div class="w3-col l4">
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <img src="coffee.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-closebtn w3-xxlarge w3-hover-text-grey">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <p>Reserve a table, ask for today's special or just send us a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-btn w3-light-grey w3-padding" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Kosher Modal -->
+<div id="kosher" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('kosher').style.display='none'" class="w3-closebtn w3-xxlarge w3-hover-text-grey">x</span>
+      <h1>Kosher</h1>
+    </div>
+    <div class="w3-container">
+      <p>Kosher Certificate</p>
+        <div class="w3-container w3-padding-32 w3-center">  
+          <img src="kosher2.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
